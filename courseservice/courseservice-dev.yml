@@ -1,0 +1,22 @@
+tracer.property: I AM DEFAULT
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: course
+        ddl-auto: update
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    schema: course
+
+server:
+  port: 8081
