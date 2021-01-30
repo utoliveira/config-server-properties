@@ -13,7 +13,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: 123456
+    password: {cipher}1dece9ef1a491021e6f83610f1e90c89c4d2d4d64b6ed61940d5b9f1b3001dd3
     testWhileIdle: true
     validationQuery: SELECT 1
     schema: course
